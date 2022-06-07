@@ -1,0 +1,36 @@
+{
+	"vue-html": {
+		"prefix": "vue-html",//关键字
+		"body": [//对应代码片段
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t<title>vueApp</title>",
+			"</head>",
+			"",
+			"<body>",
+			"\t<div id=\"app\">",
+			"",
+			"\t</div>",
+			"\t<script src=\"https://cdn.jsdelivr.net/npm/vue/dist/vue.js\"></script>",
+			"\t<script>",
+			"\t\tvar app = new Vue({",
+			"\t\t\tel: \"#app\",",
+			"\t\t\tdata: {",
+			"",
+			"\t\t\t},",
+			"\t\t\tmethods: {",
+			"",
+			"\t\t\t}",
+			"\t\t});",
+			"\t</script>",
+			"</body>",
+			"",
+			"</html>"
+		],
+		"description": "vue-html代码片段"
+	}
+}

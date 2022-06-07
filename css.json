@@ -1,0 +1,89 @@
+{
+  // 60个有用CSS代码片段:https://segmentfault.com/a/1190000002773955
+  // 简短 CSS 代码片段: https://github.com/30-seconds/30-seconds-of-css
+  // 1.单行文字超出隐藏并显示省略号
+  "单行文字超出隐藏并显示省略号": {
+    "prefix": "sld",
+    "body": [
+      "width: 200px;",
+      "overflow: hidden;",
+      "white-space: nowrap;",
+      "text-overflow: ellipsis;",
+      "$1"
+    ],
+    "description": "文字超出隐藏并显示省略号 单行 必须有宽度"
+  },
+  // 2.多行文字超出隐藏并显示省略号
+  "多行文字超出隐藏并显示省略号": {
+    "prefix": "slm",
+    "body": [
+      "word-break: break-all;",
+      "display: -webkit-box;",
+      "text-overflow: ellipsis;",
+      "-webkit-box-orient: vertical;",
+      "-webkit-line-clamp: 2; // 显示的行数",
+      "overflow: hidden;",
+      "$1"
+    ],
+    "description": "文字超出隐藏并显示省略号 多行"
+  },
+  // 3.纯css画三角形
+  "纯css画三角形": {
+    "prefix": "sjx",
+    "body": [
+      "width: 0;",
+      "height: 0;",
+      "border-width: 20px;",
+      "border-style: solid;",
+      "border-color: transparent transparent red transparent;",
+      "$1"
+    ],
+    "description": "纯css画三角形"
+  },
+  // 4.绝对定位元素居中
+  "绝对定位元素居中": {
+    "prefix": "jz",
+    "body": [
+      "position: absolute;",
+      "left: 50%;",
+      "top: 50%;",
+      "transform: translate(-50%,-50%);",
+      "$1"
+    ],
+    "description": "绝对定位元素居中（水平和垂直方向）"
+  },
+  // 5.块状元素居中
+  "块状元素居中": {
+    "prefix": "jz2",
+    "body": [
+      "position: absolute;",
+      "top: 0;",
+      "left: 0;",
+      "bottom: 0;",
+      "right: 0;",
+      "margin: auto;",
+      "$1"
+    ],
+    "description": "块状元素居中（水平和垂直方向）"
+  },
+  // 6.水平居中
+  "水平居中": {
+    "prefix": "jz3",
+    "body": [
+      "left: 50%;",
+      "transform: translateX(-50%);",
+      "$1"
+    ],
+    "description": "水平居中"
+  },
+  // 7.垂直居中
+  "垂直居中": {
+    "prefix": "jz4",
+    "body": [
+      "left: 50%;",
+      "transform: translateY(-50%);",
+      "$1"
+    ],
+    "description": "水平居中"
+  },
+}
