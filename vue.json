@@ -166,17 +166,17 @@
     ],
     "description": "快速生成vue3页面"
   },
-  "vue3带注释页面模板": {
+  "vue3带注释页面或组件模板": {
     "prefix": "vue3cli",
     "body": [
       "<!-- $1 -->",
       "<template>",
-      "   <div class=\"$2\">$3</div>",
+      "   <div class=\"$TM_FILENAME_BASE\">$3</div>",
       "</template>\n",
       "<script lang=\"ts\">",
       "import { defineComponent, getCurrentInstance, reactive, ref } from 'vue';\n",
       "export default defineComponent({",
-      "  name: '$2',",
+      "  name: '$TM_FILENAME_BASE',",
       "  // 注册你的组件",
       "  components:{  },",
       "  props: {",
@@ -223,7 +223,7 @@
     "description": "vue3.x带注释代码片段"
   },
   "vue3组件模板": {
-    "prefix": "vue3-com",
+    "prefix": "vue3-components",
     "body": [
       "<template>",
       "  <div class=\"$TM_FILENAME_BASE\">",
@@ -233,7 +233,7 @@
       "<script lang='ts'>",
       "import { reactive, toRefs,onBeforeMount, onMounted } from 'vue'\n",
       "export default {",
-      "  name: '$2',",
+      "  name: '$TM_FILENAME_BASE',",
       "  props: [],",
       "  setup() {",
       "    const state = reactive({})",
