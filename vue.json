@@ -166,6 +166,33 @@
     ],
     "description": "快速生成vue3页面"
   },
+  
+  "vue3组件模板": {
+    "prefix": "vue3-components",
+    "body": [
+      "<template>",
+      "  <div class=\"$TM_FILENAME_BASE\">",
+      "    $1",
+      "  </div>",
+      "</template>\n",
+      "<script lang='ts'>",
+      "import { defineComponent } from 'vue'\n",
+      "export default defineComponent({",
+      "  name: '$TM_FILENAME_BASE',",
+      "  props: {},",
+      "  setup() {",
+      "    ",
+      "  }",
+      "});",
+      "</script>\n",
+      "<style scoped lang=\"less\">",
+      "  ",
+      "</style>",
+      "$3"
+    ],
+    "description": "快速生成vue3组件模板"
+  },
+
   "vue3带注释页面或组件模板": {
     "prefix": "vue3cli",
     "body": [
@@ -220,41 +247,6 @@
       "</style>",
       "$5"
     ],
-    "description": "vue3.x带注释代码片段"
-  },
-  "vue3组件模板": {
-    "prefix": "vue3-components",
-    "body": [
-      "<template>",
-      "  <div class=\"$TM_FILENAME_BASE\">",
-      "    $1",
-      "  </div>",
-      "</template>\n",
-      "<script lang='ts'>",
-      "import { reactive, toRefs,onBeforeMount, onMounted } from 'vue'\n",
-      "export default {",
-      "  name: '$TM_FILENAME_BASE',",
-      "  props: [],",
-      "  setup() {",
-      "    const state = reactive({})",
-      "    onBeforeMount(() => {",
-      "      ",
-      "    })",
-      "    onMounted(() => {",
-      "      ",
-      "    })",
-      "    const refState = toRefs(state)",
-      "    return {",
-      "      ...refState",
-      "    }",
-      "  }",
-      "}",
-      "</script>\n",
-      "<style scoped lang=\"less\">",
-      "  ",
-      "</style>",
-      "$3"
-    ],
-    "description": "快速生成vue3组件模板"
+    "description": "vue3.x模板带注释代码片段"
   }
 }
